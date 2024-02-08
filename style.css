@@ -515,3 +515,25 @@ label {
     font-size: 14px;
 
 }
+
+
+/* aventure */
+.participeraventure {
+    padding: 2rem 20rem;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+}
+
+.aventure__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 8rem;
+    gap: 1rem;
+}
+
+.self {
+    align-self: center;
+}

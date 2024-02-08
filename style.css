@@ -537,3 +537,28 @@ label {
 .self {
     align-self: center;
 }
+
+/* footer */
+
+footer {
+    padding: 2rem 42px;
+}
+
+.footer__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0px;
+    border-bottom: 1px solid var(--gray);
+    
+}
+
+hr {
+    color: var(--gray);
+    background-color: #5A595A;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0px;
+}

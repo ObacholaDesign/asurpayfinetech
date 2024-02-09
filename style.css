@@ -228,6 +228,7 @@ a:hover {
     align-content: space-around;
     border-bottom: 1px solid var(--gray);
     padding: 42px;
+    
 
 }
 
@@ -259,7 +260,14 @@ ul li a {
     font-family: 'Roboto Mono', monospace;
     font-weight: 300;
     font-size: 14px;
+    padding: 8px 16px;
+    transition: all cubic-bezier(0.39, 0.575, 0.565, 1);
     
+}
+
+ul li a:hover, .active{
+    border-top: 2px solid var(--primary);
+    color: var(--primary);
 }
 
 .section-wrapper {
@@ -500,7 +508,7 @@ ul li a {
     gap: 1rem;
 }
 
-input {
+input, textarea {
     padding: 1rem;
     background-color: transparent;
     border: none;
@@ -510,10 +518,17 @@ input {
 
 }
 
+input:focus, textarea:focus {
+    outline: none;
+    border-bottom: 1px solid var(--primary);
+}
+
 label {
     font-size: 14px;
 
 }
+
+
 
 
 /* aventure */
@@ -561,3 +576,83 @@ hr {
     justify-content: space-between;
     padding: 1rem 0px;
 }
+
+
+
+
+/* Contact page */
+
+
+.c-herosection{
+    /* height: 40vh; */
+    background-image:url('images/glow.png');
+    padding-top: 2rem;
+    background-position: center 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.ps-herosection{
+    /* border: 1px solid var(--gray); */
+}
+
+.extra-padding {
+    padding: 0px 7rem;
+   
+}
+
+.c-description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* border: 1px solid var(--gray); */
+    width: 700px;
+}
+
+
+/* sectin 2 contact */
+
+.contact{
+    display: grid;
+    grid-template-columns: 200px 400px 1fr 1fr;
+    gap: 2rem;
+    padding: 0rem 42px;
+    border: 1px solid var(--gray);
+}
+
+.border-left{
+    border-left: 1px solid var(--gray);
+    
+}
+
+.ps-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ps-info *{
+    margin: 0px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 2rem;
+}
+.ps-info p::before {
+    display: contents;
+    content: '';
+    /* width: 1px;
+    height: 1px;
+    background-color: var(--gray); */
+}
+
+
+

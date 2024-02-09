@@ -619,7 +619,7 @@ hr {
 
 .contact{
     display: grid;
-    grid-template-columns: 200px 400px 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
     padding: 0rem 42px;
     border: 1px solid var(--gray);
@@ -654,5 +654,48 @@ hr {
     background-color: var(--gray); */
 }
 
+@media screen and (max-width: 768px){
+    .empty {
+    
+        visibility: hidden;
+        display: none;
+    }
 
+    h1{
+        
+    }
+
+    .border-left{
+        border-left: 0px solid var(--gray);
+        
+    }
+
+
+.participeraventure {
+    padding: 2rem 2rem;
+    border-top: 1px solid var(--gray);
+    border-bottom: 1px solid var(--gray);
+    text-align: center;
+}
+
+.aventure__wrapper{
+    padding: 1rem;
+}
+
+.section__partenaire {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.menu {
+    display: none;
+    justify-content: center;
+}
+
+.footer__header, .footer__copyright{
+    justify-content: center;
+}
+
+
+}
 

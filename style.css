@@ -694,8 +694,7 @@ hr {
 }
 
 .section__partenaire {
-    width: 100vw;
-    overflow: hidden;
+    display: none;
 }
 
 .menu {

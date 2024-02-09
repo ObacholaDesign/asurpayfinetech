@@ -662,7 +662,7 @@ hr {
     }
 
     h1{
-        
+        font-size: 2rem;
     }
 
     .border-left{
@@ -676,6 +676,17 @@ hr {
     border-top: 1px solid var(--gray);
     border-bottom: 1px solid var(--gray);
     text-align: center;
+}
+.contact {
+  
+    padding: 0rem 24px;
+    
+}
+.block {
+    padding: 2rem 0px;
+}
+.block p {
+    padding: 0px 2rem;
 }
 
 .aventure__wrapper{
@@ -694,8 +705,30 @@ hr {
 
 .footer__header, .footer__copyright{
     justify-content: center;
+    text-align: center;
 }
 
+.extra-padding {
+    padding: 0px 1rem;
+}
+
+.ps-herosection {
+   
+    width: auto;
+    
+}
+
+.c-description {
+    display: grid;
+    grid-template-columns: 0px auto;
+    text-align: center;
+    /* border: 1px solid var(--gray); */
+    width: auto;
+}
+
+.navbar .btn{
+    display: none;
+}
 
 }
 

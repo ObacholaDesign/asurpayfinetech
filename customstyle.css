@@ -358,7 +358,13 @@ position: absolute;
     
 }
 
-
+.profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: gray;
+    margin: 0px auto;
+}
 .pagerslide h6{
     color: black;
 }

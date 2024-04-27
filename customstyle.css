@@ -228,12 +228,23 @@ nav{
     
 }
 
+
+
 .card .card-body{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 24px;
+}
+
+.card-body .card-header{
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
 .btn-fab{
@@ -250,7 +261,25 @@ nav{
     color: #B9B9C6;
     text-align: center;
 }
+.card span {
+    color: #0000009e;
+    
+}
 
+.card .img{
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b9b9c630;
+}
+
+.card h6{
+    margin: 0px;
+}
 .popupsearch {
 position: absolute;
 width: 100%;
@@ -383,5 +412,4 @@ position: absolute;
     display: flex;
      align-items: stretch;
 }
-
 

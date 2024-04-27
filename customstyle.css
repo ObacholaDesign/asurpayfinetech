@@ -266,7 +266,7 @@ nav{
     
 }
 
-.card .img{
+.card .img, #message .img{
 
     height: 50px;
     width: 50px;
@@ -274,7 +274,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #b9b9c630;
+    /* background-color: #b9b9c630; */
+    background-color: #FCE62F;
 }
 
 .card h6{
@@ -413,3 +414,52 @@ position: absolute;
      align-items: stretch;
 }
 
+
+
+
+/* Coversation */
+
+.top-header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.form-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 24px;
+   
+
+
+background: #FFFFFF;
+box-shadow: 0px -10px 33px rgba(0, 0, 0, 0.09);
+
+
+
+
+
+}
+
+#message{
+    gap: 16px;
+}
+.form-container form input{
+    background-color: #F3F5F7;
+    outline: none;
+    border: none;
+}
+
+.conversation{
+    background-color: #908e8e;
+    height: 70vh;
+    width: 100%;
+    border-top-left-radius: 16px;
+    overflow: hidden;
+
+}

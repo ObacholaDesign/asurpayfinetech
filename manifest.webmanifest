@@ -9,13 +9,13 @@
     "icons": [
       {
         "purpose":"maskable",
-        "src":"icon512_maskable.png",
+        "src":"./manifest_and_icons/icon512_maskable.png",
         "type": "image/png",
         "sizes":"512x512"
       },
       {
         "purpose":"any",
-        "src":"icon512_rounded.png",
+        "src":"./manifest_and_icons/icon512_rounded.png",
         "type": "image/png",
         "sizes":"512x512"
       }

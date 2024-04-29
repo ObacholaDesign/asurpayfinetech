@@ -19,13 +19,9 @@
         "purpose":"any",
         "src":"icon512_rounded.png",
         "type": "image/png",
-        "sizes":"512x512",
-      },
-      {
-        "src": "images/android/android-launchericon-192-192.png",
-        "type": "image/png",
-        "sizes": "192x192"
+        "sizes":"512x512"
       }
+    
     ],
     "start_url": "index.html?utm_source=homescreen"
   }

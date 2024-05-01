@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"name": "dist",
+			"path": "../../marcial/dist"
+		},
+		{
+			"name": "src",
+			"path": "../../marcial/src"
+		},
+		{
+			"name": "prosuiteafrica",
+			"path": ".."
+		},
+		{
+			"path": "../../../Downloads/manifest_and_icons"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "prosuiteafrica",
+		"liveServer.settings.port": 5501
+	}
+}

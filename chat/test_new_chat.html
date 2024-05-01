@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Real-time Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <script type="text/javascript" src="https://bmarket.ai-propme.fr/152343bf-9750-a869-7030-0b7457ae2c02.js"></script>
+
+</head>
+
+<body>
+    <div id="new_chat" class="vdom_chat chat_holder" style="width: 500px; height: 1000px;" lang="en">
+        <div class="top_panel">
+
+            <div id="typing_message" class="typing_btn hide"><span class="dot"></span><span class="dot"></span><span
+                    class="dot"></span></div>
+        </div>
+        <div class="chat_wrapper">
+            <div id="chatbox" class="chatbox"></div>
+            <div id="iframe_container" class="iframe_container hide"></div>
+            <div class="ask_buttons">
+                <button type="button" id="ok_btn" class="ask_button ok hide" onclick="clickOKButton()">OK</button>
+                <button type="button" id="cancel_btn" class="ask_button no hide"
+                    onclick="clickCancelButton()">Cancel</button>
+                <button type="button" id="yes_btn" class="ask_button yes hide" onclick="clickYesButton()">YES</button>
+                <button type="button" id="no_btn" class="ask_button no hide" onclick="clickNoButton()">NO</button>
+                <button type="button" id="restart_btn" class="ask_button restart hide"
+                    onclick="showRestartDialog()"></button>
+            </div>
+        </div>
+        <div id="sending_message_holder" class="sending_message_holder">
+            <form class="sending_message">
+                <input type="text" id="message" required="" autocomplete="off" placeholder="Type something...">
+                <button type="button" id="restart_btn" class="restart_btn" onclick="showRestartDialog()"></button>
+                <button type="button" class="send_btn" onclick="sendMessage()"></button>
+            </form>
+        </div>
+        <div id="form_container" class="form_container hide"></div>
+        <div id="dialog_restart_chat" class="popup_blackout hide">
+            <div class="popup_restart_chat">
+                <h2>Restart chat</h2>
+                <p>Start conversation again?</p>
+                <div class="win_buttons">
+                    <button id="restart_chat_btn" class="send_form_btn" onclick="clickRestartButton()">Yes</button>
+                    <button class="cancel_form_btn" onclick="hideRestartChatDialog()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let isFirstStart = true;
+        window.chatId = 'new_chat';
+
+        window.userUri = 'wss://flowfusion.ai-propme.fr/ws';
+        window.hostUrl = 'flowfusion.ai-propme.fr';
+        window.scenarioGuid = 'ED216D6F-0106-8836-2468-351DF4E36926';
+        window.userEmail = 'exam@gmail.com';
+        window.userVariables = '{"lang": "fr", "userName": "Alex Ivanov", "userEmail": "a.ivanov.d@gmail.com", "userMobile": "9999999999", "userFirstName": "Alex", "userLastname": "Ivanov", "mode": "DEV", "agentName": "Alex", "now": "31/01/2024"}';
+        window.userProject = '';
+        window.userAccessToken = '';
+
+        start(window.userUri, window.hostUrl, window.scenarioGuid, window.userEmail, window.userVariables, window.userProject);
+    </script>
+</body>
+
+</html>

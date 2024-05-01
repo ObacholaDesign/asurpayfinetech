@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="manifest" href="./manifest_and_icons/manifest.json">
     <link rel="stylesheet" href="./chat/styles.css">
+    <script type="text/javascript" src="https://bmarket.ai-propme.fr/152343bf-9750-a869-7030-0b7457ae2c02.js"></script>
 </head>
 <body class="audit">
     
@@ -103,5 +104,19 @@
 
               <!-- Linking to the JavaScript file -->
     <script src="index.js" defer></script>
+    <script>
+        let isFirstStart = true;
+        window.chatId = 'new_chat';
+
+        window.userUri = 'wss://flowfusion.ai-propme.fr/ws';
+        window.hostUrl = 'flowfusion.ai-propme.fr';
+        window.scenarioGuid = 'ED216D6F-0106-8836-2468-351DF4E36926';
+        window.userEmail = 'exam@gmail.com';
+        window.userVariables = '{"lang": "fr", "userName": "Alex Ivanov", "userEmail": "a.ivanov.d@gmail.com", "userMobile": "9999999999", "userFirstName": "Alex", "userLastname": "Ivanov", "mode": "DEV", "agentName": "Alex", "now": "31/01/2024"}';
+        window.userProject = '';
+        window.userAccessToken = '';
+
+        start(window.userUri, window.hostUrl, window.scenarioGuid, window.userEmail, window.userVariables, window.userProject);
+    </script>
 </body>
 </html>

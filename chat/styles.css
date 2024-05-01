@@ -94,8 +94,10 @@
         .vdom_chat .ask_buttons .ask_button:hover {
           opacity: 1; }
           .vdom_chat .ask_buttons .ask_button.ok {
-            background-color: #3595FF;
-            color: #ffffff; }
+            background-color: #FCE62F;
+            color: #040303;
+          font-weight: bolder !important;
+          }
             .vdom_chat .ask_buttons .ask_button.yes {
               background-color: #3595FF;
               color: #ffffff; }
@@ -169,12 +171,13 @@
         .vdom_chat .win_buttons button:hover {
           opacity: 1; }
       .vdom_chat .win_buttons .send_form_btn {
-        background-color: #3595FF;
-        color: #ffffff; }
+        background-color: #FCE62F;
+        color: #000000; }
         .vdom_chat .win_buttons .cancel_form_btn {
-          background-color: #f5f5f5;
-          color: #3595FF;
-          font-weight: 600; }
+          background-color: #ececec;
+          color: #000000;
+          font-weight: 600;
+          }
     .vdom_chat .sending_message_holder {
       padding: 20px 20px 0px 20px; }
       .vdom_chat .sending_message_holder .sending_message {
@@ -232,8 +235,8 @@
         color: #000000;
         border-radius: 0px 18px 18px 18px; }
         .vdom_chat .message.user {
-          background-color: #3595FF;
-          color: #ffffff;
+          background-color: #e4d218;
+          color: #000000;
           border-radius: 18px 0px 18px 18px;
           align-self: flex-end; }
     .vdom_chat .form_container {

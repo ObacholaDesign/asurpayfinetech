@@ -99,12 +99,13 @@
           font-weight: bolder !important;
           }
             .vdom_chat .ask_buttons .ask_button.yes {
-              background-color: #3595FF;
-              color: #ffffff; }
+              background-color: #FCE62F;
+              color: #000000; }
               .vdom_chat .ask_buttons .ask_button.no {
                 background-color: #f5f5f5;
-                color: #3595FF;
-                font-weight: 600; }
+                color: #191817;
+                font-weight: 600;
+                }
     .vdom_chat .typing_btn {
       display: inline-block;
       width: initial !important;
@@ -221,7 +222,7 @@
               .vdom_chat .sending_message_holder .sending_message button.restart_btn:hover {
                 background-color: rgba(0, 0, 0, 0.3); }
           .vdom_chat .sending_message_holder .sending_message button.send_btn {
-            background-color: #3595FF;
+            background-color: #FCE62F;
             background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.9286 18.3155L19.2926 11.9516C19.6831 11.5611 20.3163 11.5611 20.7068 11.9516L27.0708 18.3155C27.4613 18.7061 27.4613 19.3392 27.0708 19.7298C26.6802 20.1203 26.0471 20.1203 25.6566 19.7298L20.9997 15.0729L20.9997 28.3413L18.9997 28.3413L18.9997 15.0729L14.3428 19.7298C13.9523 20.1203 13.3192 20.1203 12.9286 19.7298C12.5381 19.3392 12.5381 18.7061 12.9286 18.3155Z' fill='white'/%3E%3C/svg%3E%0A"); }
     .vdom_chat .message {
       margin-bottom: 10px;
@@ -248,6 +249,7 @@
       justify-content: center; }
       .vdom_chat .form_container form {
         width: 100%;
+        flex-direction: column;
         overflow: auto;
         padding-right: 20px;
         margin: 0px auto;
@@ -255,7 +257,8 @@
         height: auto;
         background-color: white;
         padding: 40px;
-        border-radius: 0px; }
+        border-radius: 0px;
+        }
         .vdom_chat .form_container form .form_group {
           margin-bottom: 20px; }
           .vdom_chat .form_container form .form_group h1 {
@@ -277,7 +280,7 @@
                 font-size: 14px;
                 font-family: 'Montserrat'; }
                 .vdom_chat .form_container form .form_group.form_input input:focus-visible {
-                  outline: 2px solid #3595FF; }
+                  outline: 2px solid #FCE62F; }
           .vdom_chat .form_container form .form_group.form_radio .group_label {
             margin-bottom: 15px;
             color: #a8a8a8;
@@ -286,11 +289,13 @@
               margin-bottom: 14px;
               display: flex;
               gap: 15px;
-              align-items: center; }
+              align-items: center;
+              }
               .vdom_chat .form_container form .form_group.form_radio .radiobutton input {
                 cursor: pointer;
                 width: 19px;
-                height: 19px; }
+                height: 19px;
+                }
                 .vdom_chat .form_container form .form_group.form_radio .radiobutton label {
                   color: #434343;
                   cursor: pointer;

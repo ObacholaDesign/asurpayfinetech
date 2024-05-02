@@ -260,7 +260,12 @@
         border-radius: 0px;
         }
         .vdom_chat .form_container form .form_group {
-          margin-bottom: 20px; }
+          margin-bottom: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: start;
+          }
           .vdom_chat .form_container form .form_group h1 {
             font-size: 18px;
             padding-bottom: 5px;

@@ -78,12 +78,31 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     back1.addEventListener("click", function() {
-      
-        pagerSlide.classList.toggle("active"); 
         item1.classList.remove("disabled"); 
         item2.classList.toggle("disabled"); 
+
+        console.log("it will go back");
         // item3.classList.toggle("disabled"); 
     
+      
+    });
+
+    back2.addEventListener("click", function() {
+      
+       
+        
+        
+        item1.classList.remove("disabled"); 
+        item2.classList.remove("disabled"); 
+        item3.classList.remove("disabled"); 
+
+
+        item1.classList.toggle("disabled"); 
+        item2.classList.toggle("disabled"); 
+        item3.classList.toggle("disabled"); 
+
+        item2.classList.toggle("disabled"); 
+       
       
     });
 

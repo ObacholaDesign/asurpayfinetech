@@ -1,38 +1,96 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const searchIcon = document.querySelector(".search-icon");
-    const popupSearch = document.querySelector(".popupsearch");
-    const closeSearch = document.querySelector(".close-search");
     const addIcon = document.querySelector(".add-icon");
     const pagerSlide = document.querySelector(".pager");
-    const closePager = document.querySelector(".close-icon2");
+    const closePager = document.querySelector(".close");
+    const btnNext = document.querySelector(".btn-next");
+    const item1 = document.querySelector(".item1");
+    const item2 = document.querySelector(".item2");
+    const item3 = document.querySelector(".item3");
 
-    const btnNext = document.querySelector(".next");
-    const slideItem = document.querySelector(".item1");
+    const back1 = document.querySelector(".back1");
+    const back2 = document.querySelector(".back2");
 
+    const type1 = document.querySelector(".type1");
+    const type2 = document.querySelector(".type2");
+    const type3 = document.querySelector(".type3");
 
-
-    searchIcon.addEventListener("click", function() {
-        popupSearch.classList.toggle("active");
-        console.log("les seach icon est cliqu");
-    });
-
-    closeSearch.addEventListener("click", function() {
-        popupSearch.classList.remove("active");
-    });
+// initialize
+    item1.classList.toggle("disabled"); 
+    item2.classList.toggle("disabled"); 
+    item3.classList.toggle("disabled"); 
 
     addIcon.addEventListener("click", function() {
+      
         pagerSlide.classList.toggle("active"); 
+        item1.classList.remove("disabled"); 
+        // item2.classList.toggle("disabled"); 
+        // item3.classList.toggle("disabled"); 
+    
       
     });
 
     closePager.addEventListener("click", function() {
-        pagerSlide.classList.remove("active");
+        item1.classList.remove("disabled"); 
+        item2.classList.remove("disabled"); 
+        item3.classList.remove("disabled"); 
+
+        item1.classList.toggle("disabled"); 
+        item2.classList.toggle("disabled"); 
+        item3.classList.toggle("disabled"); 
+
+    pagerSlide.classList.remove("active"); 
+      
     });
 
     btnNext.addEventListener("click", function() {
-        slideItem.classList.toggle("unabled");
-        console.log("Je passe au suivant");
+      
+        item1.classList.toggle("disabled"); 
+        item2.classList.remove("disabled"); 
+     
+      
     });
+
+    type1.addEventListener("click", function() {
+      
+       
+        item2.classList.toggle("disabled"); 
+        item3.classList.remove("disabled"); 
+       
+      
+    });
+
+    type2.addEventListener("click", function() {
+      
+       
+        item2.classList.toggle("disabled"); 
+        item3.classList.remove("disabled"); 
+       
+      
+    });
+
+    type3.addEventListener("click", function() {
+      
+       
+        item2.classList.toggle("disabled"); 
+        item3.classList.remove("disabled"); 
+       
+      
+    });
+
+    back1.addEventListener("click", function() {
+      
+        pagerSlide.classList.toggle("active"); 
+        item1.classList.remove("disabled"); 
+        item2.classList.toggle("disabled"); 
+        // item3.classList.toggle("disabled"); 
+    
+      
+    });
+
+
+
+
+  
 });
 
 

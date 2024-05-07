@@ -244,9 +244,10 @@
       position: absolute;
       background-color: rgba(0, 0, 0, 0.5);
       width: 100%;
-      height: 100%;
+      height: 80vh;
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      }
       .vdom_chat .form_container form {
         width: 100%;
         flex-direction: column;
@@ -256,7 +257,7 @@
         max-width: 600px;
         height: auto;
         background-color: white;
-        padding: 40px;
+        padding: 16px 24px;
         border-radius: 0px;
         }
         .vdom_chat .form_container form .form_group {

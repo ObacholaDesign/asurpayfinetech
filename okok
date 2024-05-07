@@ -1,227 +1,40 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const searchIcon = document.querySelector(".search-icon");
+    const popupSearch = document.querySelector(".popupsearch");
+    const closeSearch = document.querySelector(".close-search");
+    const addIcon = document.querySelector(".add-icon");
+    const pagerSlide = document.querySelector(".pager");
+    const closePager = document.querySelector(".close-icon2");
 
-<div class="message">
-    Il semble que vous n'ayez aucun audit actif. Allons-nous commencer?
-<div>
-                        <div class="direction">
-                            <img src="assets/direction.png" alt="">
-                        </div>
-                        <div class="fab-action">
-                            <a href="#" class="btn btn-fab add-icon"><span class="material-symbols-outlined">
-                                add
-                                </span></a>
-                        </div>
+    const btnNext = document.querySelector(".next");
+    const slideItem = document.querySelector(".item1");
 
 
 
+    searchIcon.addEventListener("click", function() {
+        popupSearch.classList.toggle("active");
+        console.log("les seach icon est cliqu");
+    });
+
+    closeSearch.addEventListener("click", function() {
+        popupSearch.classList.remove("active");
+    });
+
+    addIcon.addEventListener("click", function() {
+        pagerSlide.classList.toggle("active"); 
+      
+    });
+
+    closePager.addEventListener("click", function() {
+        pagerSlide.classList.remove("active");
+    });
+
+    btnNext.addEventListener("click", function() {
+        slideItem.classList.toggle("unabled");
+        console.log("Je passe au suivant");
+    });
+});
 
 
 
 
-
-                        <section class="pager">
-                            <header class="container">
-                                <nav class="navigation">
-                                    <div class="humberger">
-                                        <span class="material-symbols-outlined">
-                                            menu
-                                            </span>
-                                    </div>
-                
-                                    <div class="close-icon2">
-                                        <span class="material-symbols-outlined">
-                                            close
-                                            </span>
-                                    </div>
-                                </nav>
-                            </header>
-                            <div class="sliderwrapper">
-                                <div class="pagerslide item1" id="item1">
-                                    <div class="col-md-12">
-                                        <h6> Ajouter <span>une</span> <br> entreprise</h6>
-                                        
-                                    </div>
-            
-                                   <div class="formwrapper">
-                                    <form action="#" method="post" id="form-audit">
-                                        <div class="row">
-                                            <img src="#" alt="" class="profile">
-                                        </div>
-            
-                                        <div class="form-group">
-                                            <input type="text" placeholder="Nom de l'entreprise" class="input">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" placeholder="C.P." class="input">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" placeholder="Ville" class="input">
-                                        </div>
-                                        
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <a
-                                                    name=""
-                                                    id=""
-                                                    class="btn btn-primary next"
-                                                   
-                                                    role="button"
-                                                    >Suivant</a
-                                                >
-                                                
-                                            </div>
-                                        </div>
-                                    </form>
-                                   </div>
-                                </div>
-        
-                                <!-- slider 2 -->
-        
-                                <div class="pagerslide item2" id="item2">
-                                    <div class="col-md-12">
-                                        <h6> Sélectionner un type</h6>
-                                        
-                                    </div>
-            
-                                   <div class="formwrapper">
-                                    
-                                        <div class="card">
-                                            <a href="#item3">
-                                                <div class="card-body">
-                                                    <div class="card-header">
-                                                        <div class="img">
-                                                            <span class="material-symbols-outlined">
-                                                                home
-                                                                </span>
-                                                        </div>
-                                                        <h6 class="card-title">Maison individuelle</h6>
-                                                        
-                                                    </div>
-                                                    
-                                                    <p class="card-text"><span class="material-symbols-outlined">
-                                                        arrow_right_alt
-                                                        </span></p>
-                                                    
-                     
-                                                 </div>
-                                            </a>
-                                    
-                                    
-        
-                                        </div>
-        
-                                        <div class="card">
-                                            <a href="#">
-                                                <div class="card-body">
-                                                    <div class="card-header">
-                                                        <div class="img">
-                                                            <span class="material-symbols-outlined">
-                                                                apartment
-                                                                </span>
-                                                        </div>
-                                                        <h6 class="card-title">Appartement </h6>
-                                                    </div>
-                                                   
-                                                    
-                                                    <p class="card-text"><span class="material-symbols-outlined">
-                                                        arrow_right_alt
-                                                        </span></p>
-                                                    
-                     
-                                                 </div>
-                                            </a>
-                                    
-                                    
-        
-                                        </div>
-                                </div>
-                            </div>
-                                <div class="pagerslide item3" id="item3">
-                                    <div class="col-md-12">
-                                        <h6> Sélectionner un type</h6>
-                                        
-                                    </div>
-            
-                                   <div class="formwrapper">
-                                    
-                                        <div class="card">
-                                            <a href="#">
-                                                <div class="card-body">
-                                                    <div class="card-header">
-                                                        <div class="img">
-                                                            <span class="material-symbols-outlined">
-                                                                home
-                                                                </span>
-                                                        </div>
-                                                        <h6 class="card-title">Maison individuelle</h6>
-                                                        
-                                                    </div>
-                                                    
-                                                    <p class="card-text"><span class="material-symbols-outlined">
-                                                        arrow_right_alt
-                                                        </span></p>
-                                                    
-                     
-                                                 </div>
-                                            </a>
-                                    
-                                    
-        
-                                        </div>
-        
-                                        <div class="card">
-                                            <a href="#" >
-                                                <div class="card-body">
-                                                    <div class="card-header">
-                                                        <div class="img">
-                                                            <span class="material-symbols-outlined">
-                                                                apartment
-                                                                </span>
-                                                        </div>
-                                                        <h6 class="card-title">Scénarios de travaux </h6>
-                                                    </div>
-                                                   
-                                                    
-                                                    <p class="card-text"><span class="material-symbols-outlined">
-                                                        arrow_right_alt
-                                                        </span></p>
-                                                    
-                     
-                                                 </div>
-                                            </a>
-                                    
-                                    
-        
-                                        </div>
-                                        <div class="card">
-                                            <a href="conversation.html" class="iamarcial">
-                                                <div class="card-body">
-                                                    <div class="card-header">
-                                                        <div class="img">
-                                                            <span class="material-symbols-outlined">
-                                                                forum
-                                                                </span>
-                                                        </div>
-                                                        <h6 class="card-title">Interogez Marcial </h6>
-                                                    </div>
-                                                   
-                                                    
-                                                    <p class="card-text"><span class="material-symbols-outlined">
-                                                        arrow_right_alt
-                                                        </span></p>
-                                                    
-                     
-                                                 </div>
-                                            </a>
-                                    
-                                    
-        
-                                        </div>
-                                </div>
-                            </div>
-        
-        
-                         
-        
-                           
-        
-                        </section>

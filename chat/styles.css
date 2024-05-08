@@ -193,12 +193,13 @@
         .vdom_chat .sending_message_holder .sending_message input {
           width: 100%;
           background: transparent;
-          border: 0px;
+          border: 0px !important;
           height: auto;
           padding: 0px 19px;
           font-size: 14px;
           font-family: 'Montserrat';
-          color: #434343; }
+          color: #434343;
+          }
           .vdom_chat .sending_message_holder .sending_message input:focus-visible {
             outline: 0px; }
         .vdom_chat .sending_message_holder .sending_message button {

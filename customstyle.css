@@ -116,12 +116,39 @@ border: 1px solid red;
 
 }
 
+
+
 table thead th{
     color: #B9B9C6 !important;
     font-weight: normal !important;
     text-transform: uppercase !important;
     font-size: 14px !important;
 }
+
+.table>:not(thead)>*>* {
+    padding: .5rem .5rem;
+    color: #919191;
+    background-color: white;
+    border-bottom-width: 0px !important;
+ 
+   
+}
+
+tbody tr{
+       box-shadow: 0px .5px 12px #00000021;
+}
+
+thead, thead th {
+    border-bottom: none !important;
+}
+
+
+
+.table-row{
+    background-color: white !important;
+    
+}
+
 
 .emptystatemessage{
     

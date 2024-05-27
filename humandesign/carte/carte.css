@@ -1,0 +1,52 @@
+.info{
+    color: white;
+    text-align: center;
+}
+
+.carte-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
+    padding: 16px;
+    text-align: center ;
+    color: white;
+
+
+/* GLASS */
+background: rgba(120, 120, 120, 0.3);
+box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(21px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 10px;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 24px;
+   
+    text-align: center ;
+    color: white;
+}
+
+.carte-info p {
+    text-align: left;
+}
+
+.carte-info{
+    display: flex;
+
+    gap: 24px;
+  
+}
+
+.carte-img{
+   
+    height: 65vh;
+    background-image: url("../assets/carte.png");
+}

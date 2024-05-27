@@ -1,0 +1,68 @@
+/* Welcome page */
+
+.welcome{
+  color: #d0d0d0;;
+  }
+
+  .welcome .body-wrapper{
+    background-image: url("assets/bg1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.welcome .body_header{
+  color: white ;
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  /* gap: 8px; */
+  padding: 0px 24px;
+  text-align: center ;
+}
+
+.welcome .body_header  img{
+  /* width: 60%; */
+}
+
+
+.welcome .section{
+margin-top: 2rem;
+}
+.welcome .historique{
+
+padding:0px 24px;
+
+
+}
+
+
+
+.welcome .recent-activity{
+color: #d0d0d0;
+}
+
+.action-card{
+height: 100%;
+position: absolute;
+left: 0px;
+width: 100%;
+
+
+
+/* GLASS */
+background: rgba(120, 120, 120, 0.3);
+box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(21px);
+/* Note: backdrop-filter has minimal browser support */
+border-radius: 20px;
+
+}
+
+
+
+
+
+.card-body img{
+width: 50px;
+}

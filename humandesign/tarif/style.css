@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins sans-serif;
+}
+
+
+
+section{
+  height: 100vh;
+  background-image: url(Rectangle1395.png);
+  background-size: cover;
+}
+
+.container{
+  background-image: url(Rectangle.png);
+  background-size: cover;
+  /* border: 3px solid white; */
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom: none;
+}
+
+.hero-cont{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border: 3px solid #ffffff4d; 
+  padding: 16px;
+  background-color: #00000054
+}
+
+
+/* ici commence la nav */
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 30px;
+}
+/* 
+.back{
+  width: 25px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.295);
+  border-radius: 8px;
+} */
+
+/* nav .reject{
+  position: relative;
+  bottom: 22px;
+  left: 4px;
+} */
+
+/* a{
+  margin-right: 40px;
+} */
+
+
+/* ici commence la wrwpper */
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.text .p1{
+  font-size: 30px;
+  color: yellow;
+  padding-top:35px;
+  padding-bottom: 65px;
+}
+
+.text .p2{
+  font-size: 20px;
+  padding-bottom: 40px;
+}
+
+.usp{
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ gap: 10px;
+ color: white;
+ padding-bottom: 64px;
+}
+
+
+.uspa{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.521);
+  border-radius: 10px;
+  
+}
+
+
+
+
+
+.uspa p{
+  font-size: 12px;
+  
+}
+
+
+.dix {
+  border: 2px solid white;
+}
+
+.cinq{
+  padding: 18px 30px;
+}
+.cinq .pb{
+  padding-bottom: 30px;
+}
+
+
+button{
+  font-size: 20px;
+  background: #C86A55;
+  color: white;
+  padding: 12px 100px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 50px;
+
+}

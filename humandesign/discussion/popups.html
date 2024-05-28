@@ -12,44 +12,84 @@
     <link rel="stylesheet" href="discussion.css">
 
     <style>
-    
+          /* Styles existants */
+        /* Overlay */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+    align-items: flex-end;
+            z-index: 999;
+        }
+
+        /* Popup */
+        .popup {
+            background-color: #121212;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 100%;
+            width: 100%;
+            
+        }
+
+        .popup h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .popup p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .popup form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .popup input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #777777;
+            background-color: #333333;
+            color: #ffffff;
+            width: 100%;
+
+        }
+
+        .group{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .popup button {
+            padding: 10px 20px;
+            background-color: #C86A55;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .popup button:hover {
+            background-color: #b35f4b;
+        }
     </style>
 </head>
 <body class="welcome">
-    <div class="overlay" id="overlay">
-        <div class="popup">
-            <span class="close-btn" onclick="closePopup()">&times;</span>
-            <h2>Choisissez votre abonnement</h2>
-            <div class="pricing-cards">
-                <div class="pricing-card" onclick="openPaymentPopup()">
-                    <h3>5</h3>
-                    <p>questions</p>
-                    <p>10 € / mois</p>
-                    <!-- <button onclick="openPaymentPopup()">Choisir</button> -->
-                </div>
-                <div class="pricing-card best-value" onclick="openPaymentPopup()">
-                    <h3>50</h3>
-                    <p>Questions</p>
-                    <p>20 € / mois</p>
-                    <p>Best Value</p>
-                    <!-- <button onclick="openPaymentPopup()">Choisir</button> -->
-                </div>
-                <div class="pricing-card" onclick="openPaymentPopup()">
-                    <h3>25</h3>
-                    <p>Question</p>
-                    <p>30 € / mois</p>
-                    <p>Best Value</p>
-                    <!-- <button onclick="openPaymentPopup()">Choisir</button> -->
-                </div>
-
-                 
-            </div>
-        </div>
-    </div>
-
     <div class="overlay" id="payment-overlay">
         <div class="popup">
-            <span class="close-btn" onclick="closePaymentPopup()">&times;</span>
+            <span class="close-btn" onclick="closePopup()">&times;</span>
             <h2>Paiement</h2>
             <p>Entrez vos informations de paiement pour accéder à des fonctionnalités avancées.</p>
             <form>
@@ -64,6 +104,7 @@
            
         </div>
     </div>
+
     
 
     
@@ -169,18 +210,6 @@
 
         function closePopup() {
             document.getElementById("overlay").style.display = "none";
-            
-        }
-        function closePaymentPopup() {
-            document.getElementById("payment-overlay").style.display = "none";
-            
-        }
-       
-
-        function openPaymentPopup() {
-            // Ajoutez ici la logique pour afficher le popup de paiement
-            closePopup(overlay);
-            document.getElementById("payment-overlay").style.display = "flex";
         }
     </script>
 </body>

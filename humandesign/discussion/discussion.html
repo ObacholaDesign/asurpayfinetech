@@ -70,21 +70,26 @@
     <div class="body-wrapper ">
         <header class="container">
             <nav class="navigation">
-                <div class="humberger top-icon">
-                    <span class="material-symbols-outlined">
-                        
-                            chevron_left
-                          
-                        </span>
-                </div>
-                <h4 class="title">Discussion</h4>
+               
+                    <div class="humberger top-icon" onclick="goBack()">
+                        <span class="material-symbols-outlined">
+                            
+                                chevron_left
+                              
+                            </span>
+                    </div>
+                
+                
+                <h4 class="title">Echange</h4>
          
-
-                <div class="search-icon top-icon">
-                    <span class="material-symbols-outlined">
-                        settings
-                        </span>
-                </div>
+                <a href="../profil/profil.html">
+                    <div class="search-icon top-icon">
+                        <span class="material-symbols-outlined">
+                            settings
+                            </span>
+                    </div>
+                </a>
+                
             </nav>
         </header>
         <div class="body_header">
@@ -113,7 +118,7 @@
                     </div>
                 </a>
                 
-                <a href="../tarif/tarif.html" class="action-card">
+                <a href="#" class="action-card" onclick="openPopup('conversation2')">
                     <div >
                         <div class="card-body">
                             <img src="../assets/family.png" alt="">
@@ -128,7 +133,7 @@
                 
             </div>
             <div class="section mainaction">
-                <a href="../tarif/tarif.html" class="action-card">
+                <a href="#" class="action-card" onclick="openPopup('conversation3')">
                     <div class="">
                         <div class="card-body">
                             <img src="../assets/work.png" alt="">
@@ -142,7 +147,7 @@
                 </a>
                 
     
-                <a href="../tarif/tarif.html" class="action-card">
+                <a href="#" class="action-card" onclick="openPopup('conversation4')">
                     <div >
                         <div class="card-body">
                             <img src="../assets/friends.png" alt="">
@@ -162,26 +167,8 @@
        
     </div>
 
-    <script>
-        function openPopup() {
-            document.getElementById("overlay").style.display = "flex";
-        }
-
-        function closePopup() {
-            document.getElementById("overlay").style.display = "none";
-            
-        }
-        function closePaymentPopup() {
-            document.getElementById("payment-overlay").style.display = "none";
-            
-        }
-       
-
-        function openPaymentPopup() {
-            // Ajoutez ici la logique pour afficher le popup de paiement
-            closePopup(overlay);
-            document.getElementById("payment-overlay").style.display = "flex";
-        }
+    <script src="../general.js">
+      
     </script>
 </body>
 </html>

@@ -16,6 +16,16 @@ body{
  
 }
 
+.custom-button, .btn-primary {
+  background-color: #C86A55;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+
 .splash{
      color: #d0d0d0;
    padding: 32px 0px ;

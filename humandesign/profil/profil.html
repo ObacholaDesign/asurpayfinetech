@@ -65,7 +65,7 @@
 
         <header class="container">
             <nav class="navigation">
-                <div class="humberger top-icon">
+                <div class="humberger top-icon" onclick="goBack()">
                     <span class="material-symbols-outlined">
                         
                             chevron_left
@@ -223,26 +223,8 @@
        
     </div>
 
-    <script>
-        function openPopup() {
-            document.getElementById("overlay").style.display = "flex";
-        }
-
-        function closePopup() {
-            document.getElementById("overlay").style.display = "none";
-            
-        }
-        function closePaymentPopup() {
-            document.getElementById("payment-overlay").style.display = "none";
-            
-        }
+    <script src="../general.js">
        
-
-        function openPaymentPopup() {
-            // Ajoutez ici la logique pour afficher le popup de paiement
-            closePopup(overlay);
-            document.getElementById("payment-overlay").style.display = "flex";
-        }
     </script>
 </body>
 </html>

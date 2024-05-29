@@ -219,7 +219,6 @@ height: 100%;
         background-color: #333333;
         color: #ffffff;
         width: 100%;
-  
     }
   
     .group{
@@ -253,6 +252,10 @@ height: 100%;
 
         padding: 1rem;
     }
+
+label{
+    color: #d4d4d4
+}
 
     .form-group{
         display: flex;

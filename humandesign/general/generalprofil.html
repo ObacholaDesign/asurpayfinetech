@@ -16,21 +16,26 @@
     <div class="body-wrapper ">
         <header class="container">
             <nav class="navigation">
-                <div class="humberger top-icon">
-                    <span class="material-symbols-outlined">
-                        
-                            chevron_left
-                          
-                        </span>
-                </div>
-                <h4 class="title">Général</h4>
+             
+                    <div class="humberger top-icon" onclick="goBack()">
+                        <span class="material-symbols-outlined">
+                            
+                                chevron_left
+                              
+                            </span>
+                    </div>
+               
+                
+                <h4 class="title">Profil</h4>
          
-
-                <div class="search-icon top-icon">
-                    <span class="material-symbols-outlined">
-                        settings
-                        </span>
-                </div>
+                <a href="#">
+                    <div class="search-icon top-icon" id="editBtn">
+                        <span class="material-symbols-outlined">
+                            edit
+                            </span>
+                    </div>
+                </a>
+                
             </nav>
         </header>
        
@@ -40,40 +45,40 @@
             <h4>
                 Mes informations
             </h4>
-            <form>
+            <form id="profil-form">
                 <div class="form-group">
                     <label for="nom">Nom</label>
-                    <input type="text" placeholder="Lohouncou" disabled>
+                    <input type="text" placeholder="Lohouncou" value="Lohouncou" disabled>
                 </div>
                 <div class="form-group">
                     <label for="prenom">Prenom</label>
-                    <input type="text" placeholder="Innaya"  disabled>
+                    <input type="text" placeholder="Innaya" value="Innaya" disabled>
                 </div>
                 <div class="form-group">
                     <label for="prenom">Prenom</label>
-                    <input type="text" placeholder="Innaya" disabled>
+                    <input type="text" placeholder="Innaya" value="Innaya" disabled>
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" placeholder="innaya@gmail.com" disabled>
+                    <input type="email" placeholder="innaya@gmail.com" value="innaya@gmail.com" disabled>
                 </div>
                 <div class="form-group">
                     <label for="date">Date de naissance</label>
-                    <input type="date" placeholder="" value="06/06/2022" disabled>
+                    <input type="date" placeholder="" value="2024-05-28" disabled>
                 </div>
                 <div class="form-group">
                     <h6>Genre</h6>
                     <div class="radio-group">
                         <label>
-                            <input type="radio" name="gender" value="homme" required>
+                            <input type="radio" name="gender" value="homme" disabled>
                             Homme
                         </label>
                         <label>
-                            <input type="radio" name="gender" value="femme">
+                            <input type="radio" name="gender" value="femme" aria-selected="true" class="active">
                             Femme
                         </label>
                         <label>
-                            <input type="radio" name="gender" value="autre">
+                            <input type="radio" name="gender" value="autre" disabled>
                             Autre
                         </label>
                     </div>
@@ -84,7 +89,7 @@
                 
     
               
-                <button type="submit">Mettre à jour</button>
+                <button type="submit" id="submitBtn"  class="btn disabled">Mettre à jour</button>
             </form>
             
         </div>
@@ -93,6 +98,6 @@
        
     </div>
 
-   
+   <script src="../general.js"></script>
 </body>
 </html>

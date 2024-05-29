@@ -1,7 +1,9 @@
 .info{
-    color: white;
+    color: #C86A55;
     text-align: center;
 }
+
+
 
 .carte-info{
     display: flex;
@@ -46,7 +48,8 @@ border-radius: 10px;
 }
 
 .carte-img{
-   
-    height: 65vh;
-    background-image: url("../assets/carte.png");
+   height: 65vh;
+   background-image: url("../assets/carte.png");
+   background-repeat: no-repeat;
+   background-size: cover;
 }

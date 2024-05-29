@@ -1,19 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/quicksand');
 body{
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", "sans-serif";
+    font-family: "Poppins", "sans-serif";
     background-image: url("assets/bg1.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .body-wrapper {
     
     height: 100vh;
  
+}
+
+p{
+  color: #ffffffab;
+}
+
+
+/* Ressource Typographique */
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand Book", "sans-serif" !important;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.title{
+  color: #E2BF01;
 }
 
 .custom-button, .btn-primary {
@@ -23,17 +44,29 @@ body{
   padding: 10px 20px;
   font-size: 1.2rem;
   border-radius: 5px;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 .splash{
      color: #d0d0d0;
    padding: 32px 0px ;
-   display: flex;
+display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    background-image: url("assets/bgindex.png");
 
+}
+
+.splash::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1;
 }
 
 .splash_header{
@@ -45,18 +78,8 @@ body{
      padding: 0px 24px;
     padding-top: 2rem;
     gap: 24px;
+    z-index: 999;
 }
-
-.splash_image{
-    
-    /* height: calc(100vh - 46vh); */
-    /* background-image: url("assets/bg.png");
-    background-size: cover ;
-    background-repeat: no-repeat; */
-    flex-grow: 2;
-    
-}
-
 
 
 header{
@@ -66,6 +89,12 @@ header{
   justify-content: center;
   align-items: flex-start;
   /* height: 10vh; */
+}
+
+.splas_header_text {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
 }
 
 nav{
@@ -93,20 +122,16 @@ border-radius: 8px;
 color: white;
 
 }
-.splash_image img{
-  display: none;
-}
+
 .action{
     padding: 16px 24px;
     display: flex;
     justify-content: center;
+    z-index: 999;
     
 }
 
 .btn-primary{
-  
-
-
 /* Foundation /Violet/Normal */
 background: #B919E1;
 border-radius: 10px;
@@ -226,77 +251,8 @@ border-radius: 10px;
   
 
 
-  /* Welcome page */
+  
 
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-  body{
-      width: 100%;
-      height: 100vh;
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: "Montserrat", "sans-serif";
-      background-image: url("assets/bg1.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-  }
-  .body-wrapper {
-      
-      height: 100vh;
-   
-  }
-  
-  .splash{
-      color: white;
-     padding: 32px 0px ;
-     display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  
-  }
-  
-  .splash_header{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-       padding: 0px 24px;
-      padding-top: 2rem;
-      gap: 24px;
-  }
-  
-  .splash_image{
-      
-      /* height: calc(100vh - 46vh); */
-      /* background-image: url("assets/bg.png");
-      background-size: cover ;
-      background-repeat: no-repeat; */
-      flex-grow: 2;
-      
-  }
-  
-  .splash_image img{
-    display: none;
-  }
-  .action{
-      padding: 16px 24px;
-      display: flex;
-      justify-content: center;
-      
-  }
-  
-  .btn-primary{
-    
-  
-  
-  /* Foundation /Violet/Normal */
-  background: #B919E1;
-  border-radius: 10px;
-  
-  }
-  
   
   /* type weight */
   

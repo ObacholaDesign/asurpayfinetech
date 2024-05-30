@@ -6,7 +6,7 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", "sans-serif";
+    font-family: 'Poppins', sans-serif;                                     
     background-image: url("assets/bg1.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -25,16 +25,21 @@ p{
 
 /* Ressource Typographique */
 
-h1, h2, h3, h4, h5, h6 {
+
+h1, h2, h3 {
     margin: 0;
     padding: 0;
-    font-family: "Quicksand Book", "sans-serif" !important;
+    font-family: 'Brand', sans-serif;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.1;
+}
+
+h1{
+  font-size: 2rem;
 }
 
 .title{
-  color: #E2BF01;
+  color: #d4d4d4;
 }
 
 .custom-button, .btn-primary {
@@ -69,6 +74,9 @@ display: flex;
   z-index: 1;
 }
 
+.sheader{
+  font-size: 1.8rem
+}
 .splash_header{
     display: flex;
     flex-direction: column;
@@ -365,5 +373,12 @@ border-radius: 10px;
     }
     
   
+    .tag{
+      font-family: 'Brand', "sans-serif";
+    }
+    
+    .tag span{
+      color: yellow;
+    }
   
     

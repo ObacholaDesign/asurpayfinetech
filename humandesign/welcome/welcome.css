@@ -1,3 +1,4 @@
+
 /* Welcome page */
 
 .welcome{
@@ -21,6 +22,9 @@
   text-align: left !important;
 }
 
+h1{
+  font-size: xxx-large;
+}
 .welcome .body_header  .globe{
   width: 60%;
 }
@@ -32,7 +36,11 @@
   margin-bottom: 1rem;
 }
 .tag{
-  font-family: 'Quicksand Bold', "sans-serif" !important;
+  font-family: 'Brand', "sans-serif";
+}
+
+.tag span{
+  color: yellow;
 }
 
 .welcome .section{
@@ -90,4 +98,9 @@ align-items: center;
 
 .card-body img{
 width: 50px;
+}
+
+
+.historique-list{
+  color: yellow;
 }

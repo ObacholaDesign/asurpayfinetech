@@ -60,6 +60,7 @@ display: flex;
     justify-content: space-between;
     align-items: center;
     background-image: url("assets/bgnew.png");
+  height: 100%;
 
 }
 

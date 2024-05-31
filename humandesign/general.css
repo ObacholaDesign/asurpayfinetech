@@ -59,7 +59,7 @@ display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: url("assets/bgindex.png");
+    background-image: url("assets/bgnew.png");
 
 }
 
@@ -77,15 +77,19 @@ display: flex;
 .sheader{
   font-size: 1.8rem
 }
+
+.description{
+  font-size: small;
+}
 .splash_header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-     padding: 0px 24px;
-    padding-top: 2rem;
-    gap: 24px;
+    padding: 0px 24px;
+    padding-top: 0rem;
+    gap: 8px;
     z-index: 999;
 }
 
@@ -101,7 +105,7 @@ header{
 
 .splas_header_text {
   display: flex;
-  gap: 24px;
+  gap: 8px;
   flex-direction: column;
 }
 
